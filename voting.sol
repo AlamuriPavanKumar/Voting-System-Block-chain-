@@ -13,8 +13,8 @@ contract Voting {
     Candidate[] public candidates;
 
     constructor() {
-        candidates.push(Candidate("Alice", 0));
-        candidates.push(Candidate("Bob", 0));
+        candidates.push(Candidate("pavan", 0));
+        candidates.push(Candidate("satvik", 0));
     }
 
     function vote(uint candidateIndex) public {
@@ -27,4 +27,5 @@ contract Voting {
     function getVotes(uint candidateIndex) public view returns(uint) {
         return candidates[candidateIndex].voteCount;
     }
+
 }
